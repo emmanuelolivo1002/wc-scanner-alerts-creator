@@ -1,0 +1,1 @@
+# wc-scanner-alerts-creator
