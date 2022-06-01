@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scanner Alerts</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main class="p-4">
+      <div
+        id="form-container"
+        class="mx-auto max-w-2xl p-5 border rounded-lg border-4 border-blue-300"
+      >
+        <h1 class="text-2xl mb-4">Scanner Alert Creator</h1>
+        <form id="scanner-alert-form" class="space-y-4">
+          <div class="flex flex-col max-w-xs">
+            <label for="scanner" class="text-lg">Scanner: </label>
+            <select name="scanner" id="scanner" class="border-2 border-blue-500">
+              <option value="">Select a scanner</option>
+            </select>
+          </div>
+          <div id="common-fields"></div>
+          <div id="custom-fields" class="space-y-2"></div>
+
+          <button
+            id="create-alert"
+            class="mt-5 rounded-lg bg-blue-500 py-2 px-4 text-white font-bold"
+          >
+            Create Alert
+          </button>
+        </form>
+      </div>
+    </main>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="scannerFields.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
